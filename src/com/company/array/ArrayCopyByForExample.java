@@ -10,6 +10,10 @@ public class ArrayCopyByForExample {
         for(int i = 0 ; i<oldIntArray.length; i++){
             newIntArray[i] = oldIntArray[i];
         }
+
+        newIntArray[2] = 4;
+
         System.out.println(Arrays.toString(newIntArray));
+        System.out.println(oldIntArray[0] == newIntArray[0]);
     }
 }
