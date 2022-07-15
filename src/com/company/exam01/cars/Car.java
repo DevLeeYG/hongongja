@@ -2,29 +2,38 @@ package com.company.exam01.cars;
 
 public class Car {
 
- String company = "현대자동차";
- String model;
- String color;
- int maxSpeed;
+    private String company = "현대자동차";
+    private int speed;
+    private String model;
+    private String color;
+    private int maxSpeed;
 
-
- Car(){
-
- }
 
  Car(String model){
-  this(model,"ㅁㄴㅇ",250);
+     this.model = model;
  }
 
- Car(String model, String color){
-     this.model = model;
-     this.color = color;
-     this.maxSpeed = 250;
+
+ int getSpeed(){
+     return speed;
  }
- Car(String model, String color, int maxSpeed){
-     this.model = model;
-     this.color = color;
-     this.maxSpeed = maxSpeed;
+
+ void keyTurnOn(){
+     System.out.println("키를 돌립니다");
+ }
+
+
+ void setSpeed(int speed){
+     this.speed = speed;
+     System.out.println(this.speed);
+ }
+
+
+ void run(){
+     for(int i = 0 ; i <= 50; i+=10){
+         speed = i;
+         System.out.println(this.model+"달립니다.(시속:" + speed +"km/h");
+     }
  }
 
 }
