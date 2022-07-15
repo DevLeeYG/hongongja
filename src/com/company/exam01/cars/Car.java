@@ -1,5 +1,7 @@
 package com.company.exam01.cars;
 
+import com.sun.xml.internal.ws.api.pipe.Engine;
+
 public class Car {
 
     private String company = "현대자동차";
@@ -9,7 +11,11 @@ public class Car {
     private int maxSpeed;
 
 
- Car(String model){
+
+
+
+
+ public Car(String model){
      this.model = model;
  }
 
