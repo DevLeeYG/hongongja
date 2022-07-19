@@ -12,3 +12,5 @@ public class DriveExample {
 
     }
 }
+
+//상속받은 객체의 재정의된 메소드를 따른다.
