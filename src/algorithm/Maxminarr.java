@@ -17,14 +17,15 @@ public class Maxminarr {
 
             int index = 0;
 
-            for (int i = 1; i < arr.length; i++) {
-                index = ((int)Math.min(arr[index], arr[i]) == arr[i]) ? i : index;
+            for (int i = 0; i < arr.length; i++) {
+                index =  Math.min(arr[index], arr[i])== arr[i] ? i : index;
             }
 
             List<Integer> list = new ArrayList<>();
 
-            for (int j : arr)
+            for (int j : arr) {
                 list.add(j);
+            }
 
             list.remove(index);
 
@@ -52,3 +53,9 @@ public class Maxminarr {
 
 
 }
+
+
+/**
+ * 예외처리
+ * 작은수
+ */
